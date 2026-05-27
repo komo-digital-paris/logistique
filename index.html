@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Convoy — Move Freight Smarter, Grow Business Faster</title>
+<title>GR Logistic — Votre logistique sans friction</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-lang="fr">
 
 <!-- ============ FLOATING NAV (bottom-left) ============ -->
 <nav class="floating-nav">
-  <a href="#home" class="floating-logo" aria-label="Convoy home">
+  <a href="#home" class="floating-logo" aria-label="GR Logistic home">
     <span class="towasze-arrow">↑</span>
   </a>
   <span class="floating-sep">|</span>
-  <a href="#contact" class="btn-sales">Buy Convoy</a>
+
+  <div class="lang-toggle">
+    <button data-lang="fr" class="lang-btn active" aria-label="Français">FR</button>
+    <button data-lang="cn" class="lang-btn" aria-label="中文">CN</button>
+  </div>
+  <span class="floating-sep">|</span>
+
+  <a href="#contact" class="btn-sales" data-i18n="nav_sales">Devis express</a>
   <div class="all-pages-wrap">
-    <button class="all-pages-btn" id="allPagesBtn">All Pages <span class="chev">⌄</span></button>
+    <button class="all-pages-btn" id="allPagesBtn">
+      <span data-i18n="nav_pages">Toutes les pages</span> <span class="chev">⌄</span>
+    </button>
     <div class="all-pages-menu" id="allPagesMenu">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#industries">Industries</a>
-      <a href="#cases">Case Studies</a>
-      <a href="#contact">Contact</a>
-      <a href="#">Legal</a>
-      <a href="#">Blog</a>
+      <a href="#home" data-i18n="link_home">Accueil</a>
+      <a href="#about" data-i18n="link_about">À propos</a>
+      <a href="#services" data-i18n="link_services">Services</a>
+      <a href="#industries" data-i18n="link_industries">Secteurs</a>
+      <a href="#cases" data-i18n="link_cases">Études de cas</a>
+      <a href="#contact" data-i18n="link_contact">Contact</a>
     </div>
   </div>
 </nav>
@@ -44,19 +51,21 @@
     <div class="bg-overlay"></div>
   </div>
 
-  <div class="hero-mega">CONVOY</div>
+  <div class="hero-mega">GR</div>
 
   <button class="pause-btn" aria-label="Pause">
     <span class="pause-bars"><span></span><span></span></span>
-    <span class="pause-text">PAUSE</span>
+    <span class="pause-text" data-i18n="pause">PAUSE</span>
   </button>
 
   <div class="hero-content">
-    <span class="pill pill-light">WEBFLOW TEMPLATE</span>
-    <h1 class="hero-h1">Move Freight Smarter,<br/>Grow Business Faster</h1>
+    <span class="pill pill-light" data-i18n="hero_label">LOGISTIQUE &amp; E-COMMERCE EUROPE</span>
+    <h1 class="hero-h1" data-i18n="hero_h1">Votre logistique<br/>sans friction.</h1>
     <div class="btn-row center">
-      <a href="#contact" class="btn btn-white">Request a Bid <span class="arr">→</span></a>
-      <a href="#services" class="btn btn-blur">Buy Template</a>
+      <a href="#contact" class="btn btn-white">
+        <span data-i18n="hero_cta1">Demander un devis</span> <span class="arr">→</span>
+      </a>
+      <a href="#services" class="btn btn-blur" data-i18n="hero_cta2">Nos services</a>
     </div>
   </div>
 </section>
@@ -79,13 +88,11 @@
 <!-- ============ 3. ABOUT ============ -->
 <section id="about" class="section home-about">
   <div class="container center">
-    <span class="pill">A BIT ABOUT US</span>
-    <h2 class="about-body">
-      Convoy bridges the gap between operations on the road and strategy in the boardroom. We deliver reliable freight solutions while helping teams cut inefficiencies, compound performance, and scale with confidence.
-    </h2>
+    <span class="pill" data-i18n="about_label">À PROPOS</span>
+    <h2 class="about-body" data-i18n="about_body">GR Logistic accompagne les marques et les vendeurs e-commerce depuis ses entrepôts en région parisienne.</h2>
     <div class="about-stats">
-      <div class="stat"><span class="stat-num">47%</span><span class="stat-sep">|</span><span class="stat-label">Cost Savings</span></div>
-      <div class="stat"><span class="stat-num">2.8x</span><span class="stat-sep">|</span><span class="stat-label">Delivery Speed</span></div>
+      <div class="stat"><span class="stat-num">47%</span><span class="stat-sep">|</span><span class="stat-label" data-i18n="stat1_label">Économies</span></div>
+      <div class="stat"><span class="stat-num">2.8x</span><span class="stat-sep">|</span><span class="stat-label" data-i18n="stat2_label">Délais réduits</span></div>
     </div>
   </div>
   <div class="auto-slider">
@@ -96,7 +103,6 @@
       <div class="as-img" style="background-image:url('https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&auto=format&fit=crop')"></div>
       <div class="as-img" style="background-image:url('https://images.unsplash.com/photo-1577415124269-fc1140a69e91?w=900&auto=format&fit=crop')"></div>
       <div class="as-img" style="background-image:url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=900&auto=format&fit=crop')"></div>
-      <!-- duplicate for marquee -->
       <div class="as-img" style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&auto=format&fit=crop')"></div>
       <div class="as-img" style="background-image:url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=900&auto=format&fit=crop')"></div>
       <div class="as-img" style="background-image:url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900&auto=format&fit=crop')"></div>
@@ -112,14 +118,16 @@
   <div class="container">
     <div class="header-split">
       <div class="heading-block">
-        <span class="pill">OUR SERVICES</span>
-        <h2 class="h2">Logistics &amp; Consulting<br/>Solutions by Convoy<sup>©</sup></h2>
+        <span class="pill" data-i18n="services_label">NOS SERVICES</span>
+        <h2 class="h2" data-i18n="services_h2">Logistique &amp; E-commerce<br/>Solutions par GR<sup>©</sup></h2>
       </div>
       <div class="header-right">
-        <p class="header-right-body">Convoy combines reliable transportation with expert consulting to streamline operations, reduce costs, and drive growth.</p>
+        <p class="header-right-body" data-i18n="services_body">Entrepôts en Île-de-France, équipe sino-francophone, technologie de gestion.</p>
         <div class="btn-row">
-          <a href="#" class="btn btn-dark">Explore Services <span class="arr">→</span></a>
-          <a href="#" class="btn btn-soft">Buy Template</a>
+          <a href="#" class="btn btn-dark">
+            <span data-i18n="services_cta1">Tous nos services</span> <span class="arr">→</span>
+          </a>
+          <a href="#contact" class="btn btn-soft" data-i18n="services_cta2">Nous contacter</a>
         </div>
       </div>
     </div>
@@ -128,27 +136,27 @@
       <a href="#" class="service-card col-2">
         <img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=1400&auto=format&fit=crop" alt="">
         <div class="service-fade"></div>
-        <span class="service-name">Freight &amp; Transportation Management</span>
+        <span class="service-name" data-i18n="svc_1">Stockage &amp; Entreposage</span>
       </a>
       <a href="#" class="service-card col-2">
         <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1400&auto=format&fit=crop" alt="">
         <div class="service-fade"></div>
-        <span class="service-name">Route Planning &amp; Scheduling</span>
+        <span class="service-name" data-i18n="svc_2">Préparation &amp; Expédition</span>
       </a>
       <a href="#" class="service-card col-1">
         <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=900&auto=format&fit=crop" alt="" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&auto=format&fit=crop'">
         <div class="service-fade"></div>
-        <span class="service-name">Logistics Technology Integration</span>
+        <span class="service-name" data-i18n="svc_3">Transit FBA Amazon</span>
       </a>
       <a href="#" class="service-card col-2">
         <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1400&auto=format&fit=crop" alt="">
         <div class="service-fade"></div>
-        <span class="service-name">Warehouse &amp; Distribution Strategy</span>
+        <span class="service-name" data-i18n="svc_4">Retours &amp; Ré-étiquetage</span>
       </a>
       <a href="#" class="service-card col-1">
         <img src="https://images.unsplash.com/photo-1577415124269-fc1140a69e91?w=900&auto=format&fit=crop" alt="">
         <div class="service-fade"></div>
-        <span class="service-name">Transportation Cost Reduction</span>
+        <span class="service-name" data-i18n="svc_5">Contrôle Qualité &amp; Inspection</span>
       </a>
     </div>
   </div>
@@ -159,18 +167,20 @@
   <div class="container">
     <div class="horizontal-wrapper">
       <div class="side-text">
-        <span class="pill">INDUSTRIES WE SERVE</span>
-        <h2 class="h2">At Convoy<sup>©</sup> We Proudly<br/>Serve 20+ Industries</h2>
+        <span class="pill" data-i18n="ind_label">SECTEURS SERVIS</span>
+        <h2 class="h2" data-i18n="ind_h2">Plus de 20 secteurs<br/>nous font confiance</h2>
         <div class="btn-row small">
-          <a href="#" class="btn btn-dark">All Industries <span class="arr">→</span></a>
-          <a href="#" class="btn btn-soft">Buy Template</a>
+          <a href="#" class="btn btn-dark">
+            <span data-i18n="ind_cta1">Tous les secteurs</span> <span class="arr">→</span>
+          </a>
+          <a href="#contact" class="btn btn-soft" data-i18n="ind_cta2">Nous contacter</a>
         </div>
         <ul class="industry-list">
-          <li class="ind-item active" data-tab="0"><span class="ind-ico">⎔</span><span class="ind-name">Automotive &amp; Transportation</span></li>
-          <li class="ind-item" data-tab="1"><span class="ind-ico">⚓</span><span class="ind-name">Maritime Distribution</span></li>
-          <li class="ind-item" data-tab="2"><span class="ind-ico">🛒</span><span class="ind-name">E-commerce &amp; Retail</span></li>
-          <li class="ind-item" data-tab="3"><span class="ind-ico">✈</span><span class="ind-name">Air Cargo</span></li>
-          <li class="ind-item" data-tab="4"><span class="ind-ico">❄</span><span class="ind-name">Cold Chain Logistics</span></li>
+          <li class="ind-item active" data-tab="0"><span class="ind-ico">⎔</span><span class="ind-name" data-i18n="ind_1">Automobile &amp; Transport</span></li>
+          <li class="ind-item" data-tab="1"><span class="ind-ico">⚓</span><span class="ind-name" data-i18n="ind_2">Distribution maritime</span></li>
+          <li class="ind-item" data-tab="2"><span class="ind-ico">🛒</span><span class="ind-name" data-i18n="ind_3">E-commerce &amp; Retail</span></li>
+          <li class="ind-item" data-tab="3"><span class="ind-ico">✈</span><span class="ind-name" data-i18n="ind_4">Fret aérien</span></li>
+          <li class="ind-item" data-tab="4"><span class="ind-ico">❄</span><span class="ind-name" data-i18n="ind_5">Logistique sous température dirigée</span></li>
         </ul>
       </div>
       <div class="tab-box">
@@ -178,40 +188,40 @@
           <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1400&auto=format&fit=crop" alt="">
           <div class="tab-shade"></div>
           <div class="tab-stats">
-            <div><span class="tab-num">52%</span><span class="tab-sep">|</span><span class="tab-lbl">Faster Fulfillment</span></div>
-            <div><span class="tab-num">3.2x</span><span class="tab-sep">|</span><span class="tab-lbl">Order Volume Growth</span></div>
+            <div><span class="tab-num">52%</span><span class="tab-sep">|</span><span class="tab-lbl" data-i18n="tab1_lbl1">Délai de préparation</span></div>
+            <div><span class="tab-num">3.2x</span><span class="tab-sep">|</span><span class="tab-lbl" data-i18n="tab1_lbl2">Croissance volume</span></div>
           </div>
         </div>
         <div class="tab-panel" data-panel="1">
           <img src="https://images.unsplash.com/photo-1577415124269-fc1140a69e91?w=1400&auto=format&fit=crop" alt="">
           <div class="tab-shade"></div>
           <div class="tab-stats">
-            <div><span class="tab-num">43%</span><span class="tab-sep">|</span><span class="tab-lbl">Port Efficiency</span></div>
-            <div><span class="tab-num">2.7x</span><span class="tab-sep">|</span><span class="tab-lbl">Throughput</span></div>
+            <div><span class="tab-num">43%</span><span class="tab-sep">|</span><span class="tab-lbl" data-i18n="tab2_lbl1">Efficacité portuaire</span></div>
+            <div><span class="tab-num">2.7x</span><span class="tab-sep">|</span><span class="tab-lbl" data-i18n="tab2_lbl2">Débit conteneurs</span></div>
           </div>
         </div>
         <div class="tab-panel" data-panel="2">
-          <img src="https://images.unsplash.com/photo-1566233810898-be5f9dec1e54?w=1400&auto=format&fit=crop" alt="">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1400&auto=format&fit=crop" alt="">
           <div class="tab-shade"></div>
           <div class="tab-stats">
-            <div><span class="tab-num">38%</span><span class="tab-sep">|</span><span class="tab-lbl">Cost Reduction</span></div>
-            <div><span class="tab-num">2.9x</span><span class="tab-sep">|</span><span class="tab-lbl">Fleet Utilization</span></div>
+            <div><span class="tab-num">38%</span><span class="tab-sep">|</span><span class="tab-lbl" data-i18n="tab3_lbl1">Coûts réduits</span></div>
+            <div><span class="tab-num">2.9x</span><span class="tab-sep">|</span><span class="tab-lbl" data-i18n="tab3_lbl2">Utilisation flotte</span></div>
           </div>
         </div>
         <div class="tab-panel" data-panel="3">
           <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1400&auto=format&fit=crop" alt="">
           <div class="tab-shade"></div>
           <div class="tab-stats">
-            <div><span class="tab-num">61%</span><span class="tab-sep">|</span><span class="tab-lbl">On-Time Rate</span></div>
-            <div><span class="tab-num">2.3x</span><span class="tab-sep">|</span><span class="tab-lbl">Capacity Growth</span></div>
+            <div><span class="tab-num">61%</span><span class="tab-sep">|</span><span class="tab-lbl" data-i18n="tab4_lbl1">Taux ponctualité</span></div>
+            <div><span class="tab-num">2.3x</span><span class="tab-sep">|</span><span class="tab-lbl" data-i18n="tab4_lbl2">Croissance capacité</span></div>
           </div>
         </div>
         <div class="tab-panel" data-panel="4">
           <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1400&auto=format&fit=crop" alt="">
           <div class="tab-shade"></div>
           <div class="tab-stats">
-            <div><span class="tab-num">34%</span><span class="tab-sep">|</span><span class="tab-lbl">Waste Reduction</span></div>
-            <div><span class="tab-num">3.4x</span><span class="tab-sep">|</span><span class="tab-lbl">Temp Accuracy</span></div>
+            <div><span class="tab-num">34%</span><span class="tab-sep">|</span><span class="tab-lbl" data-i18n="tab5_lbl1">Réduction perte</span></div>
+            <div><span class="tab-num">3.4x</span><span class="tab-sep">|</span><span class="tab-lbl" data-i18n="tab5_lbl2">Précision température</span></div>
           </div>
         </div>
       </div>
@@ -224,7 +234,7 @@
   <div class="pattern-dots"></div>
   <div class="container">
     <div class="testi-head">
-      <h2 class="h2 light">They Tried, Listen<br/>What They Say</h2>
+      <h2 class="h2 light" data-i18n="testi_h2">Ils nous font confiance,<br/>voici leur retour.</h2>
       <div class="testi-arrows">
         <button class="arrow-btn" id="tstPrev" aria-label="Previous">‹</button>
         <button class="arrow-btn" id="tstNext" aria-label="Next">›</button>
@@ -235,51 +245,51 @@
         <article class="testi-card">
           <div class="testi-quote-col">
             <span class="q-mark">,,</span>
-            <p class="testi-text">Convoy reshaped the way we move freight. In half a year we saw measurable gains in delivery speed and landed cost that our internal team couldn't unlock on its own.</p>
+            <p class="testi-text" data-i18n="testi1_quote">GR Logistic a structuré notre stockage en région parisienne en quelques mois.</p>
             <div class="testi-author">
-              <div class="testi-author-name">JENNIFER MARTINEZ, VP OF OPERATIONS</div>
+              <div class="testi-author-name" data-i18n="testi1_author">JENNIFER MARTINEZ, DIRECTRICE DES OPÉRATIONS</div>
             </div>
             <div class="testi-client"><span class="logo-mark tri">▲</span> Crimson Bay<sup>™</sup></div>
           </div>
           <div class="testi-results-col">
-            <span class="pill light">RESULTS ACHIEVED</span>
+            <span class="pill light" data-i18n="results_label">RÉSULTATS OBTENUS</span>
             <div class="testi-results">
-              <div><span class="r-num">47%</span><span class="r-sep">|</span><span class="r-lbl">Cost Savings</span></div>
-              <div><span class="r-num">2.8x</span><span class="r-sep">|</span><span class="r-lbl">Delivery Speed</span></div>
+              <div><span class="r-num">47%</span><span class="r-sep">|</span><span class="r-lbl" data-i18n="testi1_r1_lbl">Économies</span></div>
+              <div><span class="r-num">2.8x</span><span class="r-sep">|</span><span class="r-lbl" data-i18n="testi1_r2_lbl">Vitesse expéd.</span></div>
             </div>
           </div>
         </article>
         <article class="testi-card">
           <div class="testi-quote-col">
             <span class="q-mark">,,</span>
-            <p class="testi-text">We went in skeptical and left converted. The Convoy team walked our warehouse, rode with our dispatchers, and shipped a roadmap that actually landed in production.</p>
+            <p class="testi-text" data-i18n="testi2_quote">Pour notre activité Amazon FBA, GR Logistic prend en charge la réception conteneur.</p>
             <div class="testi-author">
-              <div class="testi-author-name">MARCUS CHEN, DIRECTOR OF SUPPLY CHAIN</div>
+              <div class="testi-author-name" data-i18n="testi2_author">MARCUS CHEN, RESPONSABLE SUPPLY CHAIN</div>
             </div>
             <div class="testi-client"><span class="logo-mark">✦</span> Loom &amp; Ledger<sup>™</sup></div>
           </div>
           <div class="testi-results-col">
-            <span class="pill light">RESULTS ACHIEVED</span>
+            <span class="pill light" data-i18n="results_label">RÉSULTATS OBTENUS</span>
             <div class="testi-results">
-              <div><span class="r-num">35%</span><span class="r-sep">|</span><span class="r-lbl">Route Optimization</span></div>
-              <div><span class="r-num">3.1x</span><span class="r-sep">|</span><span class="r-lbl">Fleet Efficiency</span></div>
+              <div><span class="r-num">35%</span><span class="r-sep">|</span><span class="r-lbl" data-i18n="testi2_r1_lbl">Optimisation</span></div>
+              <div><span class="r-num">3.1x</span><span class="r-sep">|</span><span class="r-lbl" data-i18n="testi2_r2_lbl">Efficacité</span></div>
             </div>
           </div>
         </article>
         <article class="testi-card">
           <div class="testi-quote-col">
             <span class="q-mark">,,</span>
-            <p class="testi-text">Within a single quarter we recovered the fee, and by year-end we'd doubled throughput without buying a single new truck. The tech integration alone paid for itself.</p>
+            <p class="testi-text" data-i18n="testi3_quote">Un seul partenaire pour le stockage, le contrôle qualité et la gestion des retours.</p>
             <div class="testi-author">
-              <div class="testi-author-name">SARAH JOHNSON, CHIEF OPERATIONS</div>
+              <div class="testi-author-name" data-i18n="testi3_author">SARAH JOHNSON, CHIEF OPERATIONS</div>
             </div>
             <div class="testi-client"><span class="logo-mark waves">≈</span> Orbitale Net<sup>™</sup></div>
           </div>
           <div class="testi-results-col">
-            <span class="pill light">RESULTS ACHIEVED</span>
+            <span class="pill light" data-i18n="results_label">RÉSULTATS OBTENUS</span>
             <div class="testi-results">
-              <div><span class="r-num">42%</span><span class="r-sep">|</span><span class="r-lbl">Warehouse Efficiency</span></div>
-              <div><span class="r-num">2.6x</span><span class="r-sep">|</span><span class="r-lbl">Order Accuracy</span></div>
+              <div><span class="r-num">42%</span><span class="r-sep">|</span><span class="r-lbl" data-i18n="testi3_r1_lbl">Productivité</span></div>
+              <div><span class="r-num">2.6x</span><span class="r-sep">|</span><span class="r-lbl" data-i18n="testi3_r2_lbl">Précision</span></div>
             </div>
           </div>
         </article>
@@ -293,14 +303,16 @@
   <div class="container">
     <div class="header-split">
       <div class="heading-block">
-        <span class="pill">CASE STUDIES</span>
-        <h2 class="h2">Results That Speak<br/>for Themselves</h2>
+        <span class="pill" data-i18n="case_label">ÉTUDES DE CAS</span>
+        <h2 class="h2" data-i18n="case_h2">Des résultats<br/>qui parlent.</h2>
       </div>
       <div class="header-right">
-        <p class="header-right-body">Every engagement ends with measurable outcomes — from network redesigns to cost benchmarks that renegotiate a full fleet in a quarter.</p>
+        <p class="header-right-body" data-i18n="case_body">Chaque projet se termine avec des KPI mesurables.</p>
         <div class="btn-row">
-          <a href="#contact" class="btn btn-dark">Request a Bid <span class="arr">→</span></a>
-          <a href="#" class="btn btn-soft">Buy Template</a>
+          <a href="#contact" class="btn btn-dark">
+            <span data-i18n="case_cta1">Demander un devis</span> <span class="arr">→</span>
+          </a>
+          <a href="#" class="btn btn-soft" data-i18n="case_cta2">Tous les cas</a>
         </div>
       </div>
     </div>
@@ -308,18 +320,23 @@
     <div class="works-grid">
       <article class="work-card">
         <a href="#" class="work-img">
-          <img src="https://images.unsplash.com/photo-1600320402788-00ae51c76bd9?w=1600&auto=format&fit=crop" alt="" onerror="this.src='https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=1600&auto=format&fit=crop'">
+          <img src="https://images.unsplash.com/photo-1600320402788-00ae51c76bd9?w=1600&auto=format&fit=crop" alt="" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=1600&auto=format&fit=crop'">
           <div class="work-img-shade"></div>
           <span class="work-client"><span class="logo-mark tri">▲</span> Crimson Bay<sup>™</sup></span>
           <div class="work-metric">
             <span class="work-num">40%</span>
             <span class="work-sep">|</span>
-            <span class="work-lbl">Cost Reduction</span>
+            <span class="work-lbl" data-i18n="case1_metric_lbl">Coûts réduits</span>
           </div>
         </a>
-        <div class="work-tags"><span>POLAND</span><span>E-COMMERCE</span></div>
-        <h3 class="work-title">Reducing Fleet Costs 40% for National Distributor Through Route Optimization</h3>
-        <a href="#" class="work-link">Read Case Studies <span class="arr">→</span></a>
+        <div class="work-tags">
+          <span data-i18n="case1_tag1">FRANCE</span>
+          <span data-i18n="case1_tag2">E-COMMERCE</span>
+        </div>
+        <h3 class="work-title" data-i18n="case1_title">Coûts logistiques réduits de 40% pour un seller Amazon depuis notre hub parisien</h3>
+        <a href="#" class="work-link">
+          <span data-i18n="case_link">Lire l'étude de cas</span> <span class="arr">→</span>
+        </a>
       </article>
       <article class="work-card">
         <a href="#" class="work-img">
@@ -329,12 +346,17 @@
           <div class="work-metric">
             <span class="work-num">52%</span>
             <span class="work-sep">|</span>
-            <span class="work-lbl">Faster Fulfillment</span>
+            <span class="work-lbl" data-i18n="case2_metric_lbl">Préparation plus rapide</span>
           </div>
         </a>
-        <div class="work-tags"><span>UNITED STATES</span><span>E-COMMERCE</span></div>
-        <h3 class="work-title">Cutting Delivery Times in Half for E-Commerce Brand Across United States</h3>
-        <a href="#" class="work-link">Read Case Studies <span class="arr">→</span></a>
+        <div class="work-tags">
+          <span data-i18n="case2_tag1">EUROPE</span>
+          <span data-i18n="case2_tag2">FBA</span>
+        </div>
+        <h3 class="work-title" data-i18n="case2_title">Délais d'entrée FBA divisés par deux grâce au transit GR</h3>
+        <a href="#" class="work-link">
+          <span data-i18n="case_link">Lire l'étude de cas</span> <span class="arr">→</span>
+        </a>
       </article>
     </div>
   </div>
@@ -345,50 +367,50 @@
   <div class="container">
     <div class="bid-grid">
       <div class="bid-left">
-        <span class="pill">REQUEST A BID</span>
-        <h2 class="h2">Are You Intrested in<br/>Optimizing Your<br/>Logistic Operations?</h2>
-        <p class="bid-small">Get in Touch, and we will book a meeting with our consultant.</p>
+        <span class="pill" data-i18n="bid_label">DEMANDE DE DEVIS</span>
+        <h2 class="h2" data-i18n="bid_h2">Envie d'optimiser<br/>votre logistique en Europe ?</h2>
+        <p class="bid-small" data-i18n="bid_body">Laissez-nous vos coordonnées.</p>
         <div class="consultant">
           <div class="consultant-photo" style="background-image:url('https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&auto=format&fit=crop')"></div>
           <div class="consultant-info">
             <div class="consultant-name">Alex Morgan</div>
-            <div class="consultant-role">SENIOR CONSULTANT</div>
-            <div class="consultant-phone">+48 456 789 006</div>
-            <div class="consultant-email">ALEX@CONVOY.COM</div>
+            <div class="consultant-role" data-i18n="consultant_role">CONSULTANT SENIOR</div>
+            <div class="consultant-phone">+33 1 84 80 00 00</div>
+            <div class="consultant-email">ALEX@GRLOGISTIC.COM</div>
           </div>
         </div>
       </div>
       <form class="bid-form" onsubmit="event.preventDefault(); this.classList.add('sent');">
         <div class="form-grid-2">
           <label>
-            <span class="f-label">NAME</span>
-            <input type="text" placeholder="John Doe" required />
+            <span class="f-label" data-i18n="form_name">NOM</span>
+            <input type="text" placeholder="Jean Dupont" data-i18n-ph="form_name_ph" required />
           </label>
           <label>
-            <span class="f-label">EMAIL</span>
-            <input type="email" placeholder="john@doe.com" required />
+            <span class="f-label" data-i18n="form_email">EMAIL</span>
+            <input type="email" placeholder="jean@entreprise.com" data-i18n-ph="form_email_ph" required />
           </label>
         </div>
         <label>
-          <span class="f-label">SUBJECT</span>
+          <span class="f-label" data-i18n="form_subject">SUJET</span>
           <select>
-            <option>Type of project</option>
-            <option>Consulting</option>
-            <option>Technology Integration</option>
-            <option>Fleet Audit</option>
-            <option>Other</option>
+            <option data-i18n="form_subject_ph">Type de projet</option>
+            <option data-i18n="form_subject_o1">Stockage / Préparation</option>
+            <option data-i18n="form_subject_o2">Transit FBA</option>
+            <option data-i18n="form_subject_o3">Retours / Contrôle qualité</option>
+            <option data-i18n="form_subject_o4">Autre</option>
           </select>
         </label>
         <label>
-          <span class="f-label">YOUR MESSAGE</span>
-          <textarea rows="5" placeholder="Describe what you need…"></textarea>
+          <span class="f-label" data-i18n="form_message">VOTRE MESSAGE</span>
+          <textarea rows="5" placeholder="Décrivez votre besoin…" data-i18n-ph="form_message_ph"></textarea>
         </label>
         <label class="f-check">
           <span class="f-checkbox"><input type="checkbox" required/></span>
-          <span>I agree to <a href="#" class="underline">Privacy Policy.</a></span>
+          <span data-i18n="form_check">J'accepte la <a href="#" class="underline">politique de confidentialité.</a></span>
         </label>
-        <button type="submit" class="btn btn-dark">Send a Message</button>
-        <div class="form-ok">Thanks — we'll be in touch within 24h.</div>
+        <button type="submit" class="btn btn-dark" data-i18n="form_submit">Envoyer la demande</button>
+        <div class="form-ok" data-i18n="form_ok">Merci — nous revenons vers vous sous 24h.</div>
       </form>
     </div>
   </div>
@@ -405,14 +427,16 @@
   </div>
   <button class="pause-btn" aria-label="Pause">
     <span class="pause-bars"><span></span><span></span></span>
-    <span class="pause-text">PAUSE</span>
+    <span class="pause-text" data-i18n="pause">PAUSE</span>
   </button>
   <div class="cta-content">
-    <span class="pill pill-light">WEBFLOW TEMPLATE</span>
-    <h2 class="hero-h1">Ready to build<br/>remarkable website?</h2>
+    <span class="pill pill-light" data-i18n="cta_label">GR LOGISTIC EUROPE</span>
+    <h2 class="hero-h1" data-i18n="cta_h2">Prêt à confier<br/>votre logistique ?</h2>
     <div class="btn-row center">
-      <a href="#" class="btn btn-white">Buy Template <span class="arr">→</span></a>
-      <a href="#" class="btn btn-blur">All Templates</a>
+      <a href="#contact" class="btn btn-white">
+        <span data-i18n="cta_btn1">Demander un devis</span> <span class="arr">→</span>
+      </a>
+      <a href="#services" class="btn btn-blur" data-i18n="cta_btn2">Voir nos services</a>
     </div>
   </div>
 </section>
@@ -422,72 +446,71 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="#home" class="footer-logo"><span class="logo-box">◰</span>CONVOY<sup>©</sup></a>
+        <a href="#home" class="footer-logo"><span class="logo-box">◰</span>GR LOGISTIC<sup>©</sup></a>
         <p class="footer-addr">
-          Convoy<br/>
-          ul. Ładunku 56,<br/>
-          30-003 Kraków
+          GR Logistic<br/>
+          12 rue de l'Entrepôt,<br/>
+          93200 Saint-Denis
         </p>
         <p class="footer-contact">
-          +48 456 789 006<br/>
-          hello@convoy.com
+          +33 1 84 80 00 00<br/>
+          hello@grlogistic.com
         </p>
       </div>
       <div class="footer-col">
-        <h4>COMPANY</h4>
+        <h4 data-i18n="footer_company">ENTREPRISE</h4>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#">Legal</a></li>
-          <li><a href="#">404</a></li>
+          <li><a href="#home" data-i18n="link_home">Accueil</a></li>
+          <li><a href="#about" data-i18n="link_about">À propos</a></li>
+          <li><a href="#contact" data-i18n="link_contact">Contact</a></li>
+          <li><a href="#" data-i18n="link_legal">Mentions légales</a></li>
+          <li><a href="#" data-i18n="link_404">404</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>CMS PAGES</h4>
+        <h4 data-i18n="footer_pages">PAGES</h4>
         <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#">Service Page (CMS)</a></li>
-          <li><a href="#cases">Case Studies</a></li>
-          <li><a href="#">Case Study (CMS)</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Blog Article (CMS)</a></li>
+          <li><a href="#services" data-i18n="link_services">Services</a></li>
+          <li><a href="#industries" data-i18n="link_industries">Secteurs</a></li>
+          <li><a href="#cases" data-i18n="link_cases">Études de cas</a></li>
+          <li><a href="#" data-i18n="link_blog">Blog</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>SOCIAL MEDIA</h4>
+        <h4 data-i18n="footer_social">RÉSEAUX SOCIAUX</h4>
         <ul>
           <li><a href="#">Linkedin</a></li>
-          <li><a href="#">Facebook</a></li>
+          <li><a href="#">WeChat</a></li>
           <li><a href="#">Instagram</a></li>
-          <li><a href="#">Tiktok</a></li>
+          <li><a href="#">小红书</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>JOIN NEWSLETTER</h4>
+        <h4 data-i18n="footer_news">NEWSLETTER</h4>
         <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('.n-ok').style.display='block';">
-          <input type="email" placeholder="hi@convoy.com" required />
-          <button type="submit">Subscribe</button>
+          <input type="email" placeholder="votre@email.com" data-i18n-ph="news_ph" required />
+          <button type="submit" data-i18n="news_btn">S'abonner</button>
         </form>
-        <p class="small">Your information is never disclosed to third parties.</p>
-        <p class="small n-ok" style="display:none;">Subscribed.</p>
+        <p class="small" data-i18n="news_disclaimer">Vos informations ne sont jamais divulguées à des tiers.</p>
+        <p class="small n-ok" style="display:none;" data-i18n="news_ok">Inscription confirmée.</p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <span class="fb-left">© MADE IN 2026 WITH {LOVE} BY <a href="#" class="underline">TOWASZE.STUDIO</a></span>
+      <span class="fb-left" data-i18n="footer_madeby">© 2026 — GR LOGISTIC PARIS</span>
       <div class="fb-right">
-        POWERED BY <a href="#">WEBFLOW</a>
-        <a href="#">CHANGELOG</a>
-        <a href="#">INSTRUCTIONS</a>
-        <a href="#">STYLE GUIDE</a>
-        <a href="#">LICENSES</a>
+        <span data-i18n="footer_powered">PROPULSÉ PAR</span> <a href="#">GR</a>
+        <a href="#" data-i18n="footer_changelog">JOURNAL</a>
+        <a href="#" data-i18n="footer_instructions">DOCUMENTATION</a>
+        <a href="#" data-i18n="footer_styleguide">GUIDE DE STYLE</a>
+        <a href="#" data-i18n="footer_licenses">LICENCES</a>
       </div>
     </div>
   </div>
-  <div class="footer-mega">CONVOY<sup>©</sup></div>
+  <div class="footer-mega">GR LOGISTIC<sup>©</sup></div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
