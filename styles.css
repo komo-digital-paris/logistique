@@ -266,17 +266,18 @@ sup { font-size: 0.5em; vertical-align: super; font-weight: 400; }
   left: 0; right: 0;
   top: 15%;
   text-align: center;
-  font-size: clamp(70px, 13.5vw, 220px);
+  font-size: clamp(56px, 12vw, 200px);
   font-weight: 700;
   letter-spacing: -0.055em;
   color: #e4e4e4;
-  line-height: 0.85;
+  line-height: 0.88;
   pointer-events: none;
   user-select: none;
   z-index: 1;
   text-shadow: 0 2px 40px rgba(0,0,0,0.2);
   font-family: 'Geist', sans-serif;
   white-space: nowrap;
+  padding: 0 16px;
 }
 
 .pause-btn {
@@ -1140,8 +1141,14 @@ sup { font-size: 0.5em; vertical-align: super; font-weight: 400; }
   .floating-nav { bottom: 16px; left: 16px; }
   .all-pages-btn span.chev, .btn-sales { font-size: 12px; }
 
-  .hero-h1 { font-size: clamp(36px, 10vw, 52px); }
-  .hero-mega { top: 20%; font-size: clamp(80px, 24vw, 180px); }
+  .hero-h1 { font-size: clamp(32px, 8vw, 48px); }
+  .hero-mega {
+    top: 12%;
+    font-size: clamp(56px, 16vw, 110px);
+    white-space: normal;
+    word-spacing: 100vw;
+    line-height: 0.92;
+  }
 
   .about-body { font-size: 20px; }
   .stat-num { font-size: 32px; }
