@@ -266,7 +266,7 @@ sup { font-size: 0.5em; vertical-align: super; font-weight: 400; }
   left: 0; right: 0;
   top: 15%;
   text-align: center;
-  font-size: clamp(220px, 38vw, 620px);
+  font-size: clamp(70px, 13.5vw, 220px);
   font-weight: 700;
   letter-spacing: -0.055em;
   color: #e4e4e4;
@@ -276,6 +276,7 @@ sup { font-size: 0.5em; vertical-align: super; font-weight: 400; }
   z-index: 1;
   text-shadow: 0 2px 40px rgba(0,0,0,0.2);
   font-family: 'Geist', sans-serif;
+  white-space: nowrap;
 }
 
 .pause-btn {
